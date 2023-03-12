@@ -1,0 +1,39 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+
+/* Set default style for all images */
+		.column img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+			margin: 10px auto;
+		}
+
+		/* Set styles for each breakpoint */
+		@media screen and (min-width: 576px) {
+			/* Display 2 images in a row */
+			.column {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 10px;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+			/* Display 3 images in a row */
+			.column {
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+
+		@media screen and (min-width: 992px) {
+			/* Display 4 images in a row */
+			.column {
+				grid-template-columns: repeat(4, 1fr);
+			}
+		}
