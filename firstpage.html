@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Two Player Options</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: black;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: pink;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			border-radius: 5px;
+		}
+
+		h1 {
+
+			text-align: center;
+			color: black;
+		}
+
+		.button-container {
+			display: flex;
+			justify-content: center;
+			margin-top: 40px;
+		}
+
+		button {
+			padding: 10px 20px;
+			font-size: 18px;
+			font-weight: bold;
+			color: #fff;
+			background-color: black;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			margin-right: 10px;
+		}
+
+		button:last-child {
+			margin-right: 0;
+		}
+
+		button:hover {
+			background-color:brown ;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Choose Your Player Option</h1>
+		<div class="button-container">
+			<button id="player1" onclick="window.location.href='againstcomp.html'"> Single Player</button>
+			<button id="player2" onclick="window.location.href='tictactoe2.html'"> Multi player</button>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
